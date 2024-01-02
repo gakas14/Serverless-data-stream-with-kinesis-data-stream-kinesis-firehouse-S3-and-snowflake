@@ -1,6 +1,6 @@
 # Serverless-data-stream-with-kinesis-data-stream-kinesis-firehouse-S3-and-snowflake
 
-Use Postman to make an API call; then Amazon API Gateway will trigger a Lambda function; then the function will write into the s3 bucket; then, Snowpipe will be triggered to write the data into a Snowflake. To not trigger Snowpipe for every API call and optimize the process, we will use Amazon Kinesis data Stream to collect the data first (dump the data only after some period of time or if there are few messages), then use Kinesis Firehouse to dump the data into s3. 
+Use Postman to make an API call; the Amazon API Gateway will trigger a Lambda function; the function will write into the s3 bucket; then, Snowpipe will start to write the data into a Snowflake. To not activate Snowpipe for every API call and optimize the process, we will use Amazon Kinesis data Stream to collect the data first (dump the data based on the buffer size or the time or if there are few messages), then use Kinesis Firehouse to leave the data into s3. 
 
  
 
