@@ -1,0 +1,1 @@
+# Serverless-data-stream-with-kinesis-data-stream-kinesis-firehouse-S3-and-snowflake
